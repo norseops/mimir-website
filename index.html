@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mimir — Kids Arcade and Learning</title>
+  <style>
+:root { --bg:#0d1029; --bg2:#1f2160; --purple:#5b2f7a; --text:#f4f6ff; --muted:#c5c8e0; --gold:#ffd34d; --line:rgba(255,255,255,.12); --card:rgba(20,24,56,.72); }
+* { box-sizing:border-box; }
+html,body { margin:0; background:var(--bg); color:var(--text); font:18px/1.6 -apple-system, "SF Pro Text", "Segoe UI", Inter, system-ui, sans-serif; }
+body { min-height:100vh; background: radial-gradient(120% 80% at 70% 100%, #5b2f7a 0%, #1f2160 45%, #0b1230 100%); }
+a { color:#8cb4ff; }
+a:hover { color:#ffd34d; }
+header, main, footer { width:min(760px, calc(100% - 40px)); margin:0 auto; }
+header { display:flex; align-items:center; justify-content:space-between; padding:28px 0 10px; gap:16px; }
+.brand { display:flex; align-items:center; gap:14px; text-decoration:none; color:inherit; }
+.brand img.icon { width:64px; height:64px; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,.35); }
+.brand img.word { height:36px; width:auto; }
+nav a { margin-left:18px; font-weight:700; text-decoration:none; color:#fff; }
+nav a[aria-current="page"] { color:var(--gold); }
+main { background:var(--card); border:1px solid var(--line); border-radius:28px; padding:36px 36px 44px; box-shadow:0 20px 60px rgba(0,0,0,.35); backdrop-filter:blur(16px); }
+h1 { font-size:2rem; line-height:1.2; margin:0 0 12px; }
+h2 { font-size:1.25rem; margin:28px 0 8px; }
+p,li { color:var(--muted); }
+p.lead { color:var(--text); font-size:1.05rem; }
+.hero { display:flex; gap:22px; align-items:center; margin-bottom:8px; }
+.hero img.huginn { width:120px; height:auto; filter: drop-shadow(0 10px 18px rgba(0,0,0,.4)); }
+ul { padding-left:1.2em; }
+footer { color:var(--muted); font-size:.9rem; padding:28px 0 48px; }
+</style>
+  <link rel="icon" href="/assets/app-icon.png">
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">
+      <img class="icon" src="/assets/app-icon.png" alt="Mimir app icon">
+      <img class="word" src="/assets/mimir-wordmark.png" alt="Mimir">
+    </a>
+    <nav><a href="/" aria-current="page">Home</a><a href="/privacy">Privacy</a><a href="/support">Support</a></nav>
+  </header>
+  <main>
+
+    <div class="hero">
+      <div>
+        <h1>Arcade games plus lessons, with no ads and no tracking.</h1>
+        <p class="lead">Mimir is a polished arcade and learning app for families with kids around five to eight. Six games come with the app. Optional learning, language, and game packs are sold as one-time in-app purchases, behind a parent PIN.</p>
+      </div>
+      <img class="huginn" src="/assets/huginn.webp" alt="Huginn, the raven guide">
+    </div>
+    <h2>Included games</h2>
+    <p>Hay Hero, Puzzles, Coloring Book, Hill Rider, Hungry Hole, and Sky Sling.</p>
+    <h2>Optional packs</h2>
+    <p>Game Pack 2, learning packs for Pre-K through 2nd Grade, and language packs for Danish (Hej Dansk) and Spanish (¡Hola!).</p>
+    <h2>For parents</h2>
+    <p>There is no account to create. Play works offline. Purchases stay in the Parents area, protected by a PIN. Mimir does not collect personal data, show ads, or track anyone.</p>
+    <p><a href="/privacy">Privacy Policy</a> · <a href="/support">Support</a></p>
+
+  </main>
+  <footer>
+    <p>© 2026 Kevin Clark. Mimir is an iPhone and iPad app. These pages are a draft until they are hosted and linked from App Store Connect.</p>
+  </footer>
+</body>
+</html>
